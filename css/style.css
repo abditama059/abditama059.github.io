@@ -433,6 +433,29 @@ a.hero-tanya {
   text-align: start;
   padding: 0.4rem;
 }
+/*  */
+/* GALERI */
+/*  */
+
+.galeri-image-container {
+  display: flex;
+  height: 500px;
+}
+.galeri-image-items {
+  display: flex;
+  overflow: hidden;
+  height: 100%;
+  width: 33.33%;
+}
+
+.galeri-image-items img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.galeri-button {
+  color: white;
+}
 
 /*  */
 /* FOOTER */
