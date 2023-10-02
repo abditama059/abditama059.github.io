@@ -4,6 +4,14 @@
   text-decoration: none;
 }
 
+.fa {
+  color: white;
+}
+
+li {
+  list-style-type: none;
+}
+
 article {
   display: flex;
   justify-content: center;
@@ -83,10 +91,6 @@ header {
 
 header ul {
   padding: 0;
-}
-
-header li {
-  list-style-type: none;
 }
 
 .header-navbar a {
@@ -461,13 +465,30 @@ a.hero-tanya {
 /* FOOTER */
 /*  */
 
-.footer-top {
+.footer-container {
+  height: 400px;
+  background-color: #112134;
+  width: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer-left {
+  background-color: red;
+}
+
+.footer-top img {
+  height: 150px;
 }
 
 .footer-right {
+  background-color: blue;
+  height: 100%;
+
+  display: flex;
+  flex-direction: row;
 }
 
 .footer-address {
