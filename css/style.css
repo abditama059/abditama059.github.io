@@ -32,6 +32,7 @@ h1 {
   font-family: "Poppins", serif;
   font-size: 1.8rem;
   letter-spacing: 0.6rem;
+  text-align: center;
 }
 
 h2 {
@@ -84,7 +85,7 @@ header {
   margin: 0;
 }
 
-.header-navbar {
+nav {
   max-width: 1600px;
   height: 4.6rem;
   margin: 0 auto;
@@ -101,14 +102,14 @@ header ul {
   padding: 0;
 }
 
-.header-navbar a {
+nav a {
   padding: 0 1.2rem;
   color: rgb(255, 255, 255);
   font-size: 0.8rem;
   font-weight: 500;
 }
 
-.header-navbar ul {
+nav ul {
   display: flex;
   align-items: center;
 }
@@ -150,6 +151,10 @@ a.navbar-logo-container {
 }
 
 /* HERO */
+
+article.hero {
+  padding: 0;
+}
 
 .content {
   display: flex;
@@ -334,6 +339,8 @@ a.hero-tanya {
 }
 
 .statistik-container {
+    display: flex;
+    justify-content: center;
 }
 
 .statistik-items {
@@ -388,10 +395,10 @@ a.hero-tanya {
   height: 3rem;
   width: 100%;
   color: white;
-
   display: flex;
   justify-content: space-around;
   align-items: center;
+  cursor: pointer;
 }
 
 .testi-items-main {
