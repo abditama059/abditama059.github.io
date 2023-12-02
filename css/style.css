@@ -114,43 +114,104 @@ nav ul {
   align-items: center;
 }
 
-a.navbar-logo-container {
+nav a {
+  display: inline-block;
+  xxbackground-color: red;
+  padding: 0.6rem 1rem;
+  margin: 3px;
+}
+
+nav a:not(.navbar-logo, .navbar-daftar):hover {
+  background-color: white;
+  color: #112134;
+  border-radius: 3px;
+  transition: 0.1s;
+}
+
+a.navbar-center-container {
   position: absolute;
 }
 
-.navbar-logo {
-  display: flex;
-  align-items: center;
-  /* padding: 0; */
-  flex-direction: column;
+/* NAVBAR LEFT */
+
+.navbar-community {
+  cursor: pointer;
 }
 
-.navbar-logo img {
-  width: 60px;
-}
+.community-dropdown {
+  display: none;
+  position: absolute;
 
-.navbar-logo span {
-  font-size: 1.1em;
-  font-family: "Eb Garamond", serif;
-  font-weight: 400;
-  letter-spacing: 0.2rem;
-  line-height: 0.8rem;
-}
-
-/* .navbar-right {
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
-} */
-
-.navbar-right p {
+  margin: 0 3px;
   background-color: white;
   border-radius: 3px;
-  padding: 0.6rem 1.3rem;
-  margin: 0 18px;
+  width: 114px;
+  opacity: 0;
 }
 
+.navbar-community:hover .community-dropdown {
+  display: block;
+  animation: dropdown 0.05s ease-in-out;
+  opacity: 1;
+}
+
+@keyframes dropdown {
+  from {
+    transform: translateY(-10px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.community-dropdown a {
+  color: #005473;
+}
+
+/*  */
+/* NAVBAR CENTER / LOGO */
+/*  */
+
+.navbar-center {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+}
+
+.navbar-center img {
+  width: 72px;
+}
+
+.navbar-center a {
+  padding: 0;
+}
+
+.navbar-center a:hover {
+  /* background-color: ; */
+}
+
+/*  */
+/* NAVBAR RIGHT */
+/*  */
+
+.navbar-daftar {
+  background-color: white;
+  color: #112134;
+  border: 3px solid #005473;
+  border-radius: 6px;
+  transition: 0.2s;
+}
+
+.navbar-daftar:hover {
+  background-color: #045572;
+  color: white;
+  border: 3px solid white;
+}
+
+/*  */
 /* HERO */
+/*  */
 
 article.hero {
   padding: 0;
@@ -237,11 +298,24 @@ article.hero {
   background-color: #005473;
   color: white;
 }
+
+.hero-daftar a:hover {
+  background-color: white;
+  border: 2px solid #005473;
+  color: #005473;
+  transition: all 0.1s ease-in;
+}
+
 a.hero-tanya {
   font-size: 0.8rem;
   text-decoration: underline;
   text-align: center;
   font-weight: 700;
+}
+
+a.hero-tanya:hover {
+  letter-spacing: 1px;
+  transition: all 0.1s ease-in;
 }
 
 .content-article {
@@ -339,8 +413,8 @@ a.hero-tanya {
 }
 
 .statistik-container {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .statistik-items {
@@ -399,6 +473,12 @@ a.hero-tanya {
   justify-content: space-around;
   align-items: center;
   cursor: pointer;
+}
+
+.testi-murid-active {
+  background-color: #112233;
+  padding: 2px 18px;
+  border-radius: 3px;
 }
 
 .testi-items-main {
@@ -474,6 +554,45 @@ a.hero-tanya {
 
 .galeri-button {
   color: white;
+}
+
+/*  */
+/* ASIDE */
+/*  */
+
+aside {
+  color: white;
+
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translate(0, -50%);
+
+  z-index: 1;
+}
+aside .hide {
+}
+
+.aside-container {
+  background-color: #045572;
+  padding: 2rem 1.2rem;
+  margin: auto 0.9rem;
+  width: 180px;
+  border-radius: 1rem;
+}
+
+aside img {
+  width: 100%;
+  background-color: #c7feff;
+  border-radius: 0.3rem;
+
+  object-fit: fill;
+}
+
+.aside-biodata {
+}
+
+.aside-notes {
 }
 
 /*  */

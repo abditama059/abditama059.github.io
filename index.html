@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
     <link rel="stylesheet" href="css/style.css" />
+    <script src="scripts/main.js"></script>
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -24,23 +26,28 @@
             <li><a href="http://">Home</a></li>
             <li><a href="http://">Tentang</a></li>
             <li><a href="http://">Kontak</a></li>
-            <li><a href="http://">Komunitas</a></li>
+            <li class="navbar-community">
+              <a class="">Komunitas <i class="fa-solid fa-caret-down"></i></a><br />
+              <div class="community-dropdown">
+                <a href="#">Pengunjung</a>
+                <a href="#">Murid</a>
+                <a href="#">Guru</a>
+              </div>
+            </li>
           </ul>
         </div>
-        <a class="navbar-logo-container" href="">
-          <div class="navbar-logo">
-            <img src="img/abydos-logo.png" alt="Logo Abydos" srcset="" />
-            <span href="http://">ABYDOS</span>
-          </div>
-        </a>
+        <div class="navbar-center">
+          <a class="navbar-logo" href="http://"> <img src="img/abydos-logo-text.png" alt="Logo Abydos" srcset="" /><br /> </a>
+        </div>
         <div class="navbar-right">
           <ul>
             <li>
               <a href=""> <i class="fa-solid fa-magnifying-glass"></i></a>
             </li>
+
             <li><a href="http://">Login</a></li>
             <div>
-              <a href="http://"><p class="color-darkblue">Daftar</p></a>
+              <a class="navbar-daftar" href="http://">Daftar</a>
             </div>
           </ul>
         </div>
@@ -181,7 +188,7 @@
           </div>
           <div class="testi-items bg-color-teal">
             <div class="testi-items-header bg-color-darkblue">
-              <div class="testi-murid"><h2>AYANE</h2></div>
+              <div class="testi-murid-active"><h2>AYANE</h2></div>
               <div class="testi-murid"><h2>SHIROKO</h2></div>
               <div class="testi-murid"><h2>SERIKA</h2></div>
               <div class="testi-murid"><h2>HOSHINO</h2></div>
@@ -226,10 +233,22 @@ Teman-teman disini baik semua.
         </article>
       </div>
       <aside>
-        <div class="photo-profile">
-          <img src="img/photo-profile" alt="" srcset="" />
+        <div class="aside-hide">MUNCULKAN DAN SEMBUNYIKAN</div>
+        <div class="aside-container">
+          <img src="img/photo-profile.png" alt="" srcset="" />
+          <div class="photo-profile"></div>
+          <div class="aside-biodata"></div>
+
+          <br />
+          <h3><b>NAMA:</b></h3>
+          <h3>Abdillah Utama</h3>
+          <br />
+          <h3><b>DOMISILI:</b></h3>
+          <h3>Kab. Bekasi</h3>
+          <br />
+          <h3><b>HOBI :</b></h3>
+          <h3>Bersepeda, Menggambar, Bermain Game</h3>
         </div>
-        <div class="aside-biodata"></div>
         <div class="aside-notes"></div>
       </aside>
     </main>
@@ -264,11 +283,10 @@ Teman-teman disini baik semua.
             </ul>
           </div>
         </div>
-
       </div>
-                <div class="footer-bottom">
-          <h3>2023. Website Design by Abdillah Utama for Tugas Akhir purposes. ALL IMAGES ASSETS ARE CREDIT TO NEXON. INC.</h3>
-        </div>
+      <div class="footer-bottom">
+        <h3>2023. Website Design by Abdillah Utama for Tugas Akhir purposes. ALL IMAGES ASSETS ARE CREDIT TO NEXON. INC.</h3>
+      </div>
     </footer>
   </body>
 </html>
