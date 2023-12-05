@@ -118,7 +118,7 @@ nav a {
   display: inline-block;
   xxbackground-color: red;
   padding: 0.6rem 1rem;
-  margin: 3px;
+  /* margin: 3px; */
 }
 
 nav a:not(.navbar-logo, .navbar-daftar):hover {
@@ -142,10 +142,9 @@ a.navbar-center-container {
   display: none;
   position: absolute;
 
-  margin: 0 3px;
   background-color: white;
   border-radius: 3px;
-  width: 114px;
+  width: 113px;
   opacity: 0;
 }
 
@@ -168,19 +167,15 @@ a.navbar-center-container {
   color: #005473;
 }
 
-/*  */
 /* NAVBAR CENTER / LOGO */
-/*  */
 
 .navbar-center {
   display: flex;
-  align-items: center;
-  flex-direction: column;
   position: absolute;
 }
 
 .navbar-center img {
-  width: 72px;
+  width: 75px;
 }
 
 .navbar-center a {
@@ -475,10 +470,17 @@ a.hero-tanya:hover {
   cursor: pointer;
 }
 
+.testi-murid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: calc(1200px / 5);
+  height: 100%;
+}
+
 .testi-murid-active {
-  background-color: #112233;
-  padding: 2px 18px;
-  border-radius: 3px;
+  background-color: red;
 }
 
 .testi-items-main {
@@ -528,6 +530,8 @@ a.hero-tanya:hover {
 }
 
 .testi-items-footer h3 {
+  background-color: red;
+
   color: white;
   text-align: start;
   padding: 0.4rem;
